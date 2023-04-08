@@ -1,8 +1,8 @@
-# reactset
+# alexskir-reactplate
 
 *It is a modified and updated template based on [reactjs-boilerplate of Nikhil-Kumaran](https://github.com/Nikhil-Kumaran/reactjs-boilerplate).* 
 
-It sets up  react (@^17.0.2), babel, webpack (@^5.78.0) with basic loaders (CSS, LESS, SASS, babel), ant design and bootstrap, react-router. It is optomized for development and production using code splitting and lazy loading
+The template is similar to create react app but gives you more control over the build configurations. It sets up  react (@^17.0.2), babel, webpack (@^5.78.0) with basic loaders (CSS, LESS, SASS, babel), ant design and bootstrap, react-router. It is optomized for development and production using code splitting and lazy loading
 
 ## Prerequisites
 
@@ -11,19 +11,19 @@ It sets up  react (@^17.0.2), babel, webpack (@^5.78.0) with basic loaders (CSS,
 ## Installation
 
 ```bash
-npm install -g reactset
+npm install -g alexskir-reactplate
 ```
 
 After installation, you can use the following command to initialize your project.
 
 ```bash
-reactset project-name
+alexskir-reactplate project-name
 ```
 
-Alternatively, you can use `npx` to directly use `reactset` without installing globally.
+Alternatively, you can use `npx` to directly use `alexskir-reactplate` without installing globally.
 
 ```bash
-npx reactset project-name
+npx alexskir-reactplate project-name
 ```
 
 ## Usage

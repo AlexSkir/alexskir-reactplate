@@ -65,12 +65,16 @@ export default class MainLayout extends React.Component {
             <a
               target="_blank"
               rel="noopener noreferrer"
-              href="https://github.com/AlexSkir/reactset"
+              href="https://github.com/AlexSkir/alexskir-reactplate"
             >
               GitHub
             </a>
             <span> | </span>
-            <a target="_blank" rel="noopener noreferrer" href="https://www.npmjs.com/">
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://www.npmjs.com/package/alexskir-reactplate"
+            >
               npm
             </a>
           </Footer>

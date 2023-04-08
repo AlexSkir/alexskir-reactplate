@@ -68,18 +68,21 @@ exec(`mkdir ${process.argv[2]} && cd ${process.argv[2]} && npm init -f`, (initEr
 
   // npm will remove the .gitignore file when the package is installed, therefore it cannot be
   // copied locally and needs to be downloaded.
-  https.get('https://raw.githubusercontent.com/AlexSkir/reactset/master/.gitignore', (res) => {
-    res.setEncoding('utf8');
-    let body = '';
-    res.on('data', (data) => {
-      body += data;
-    });
-    res.on('end', () => {
-      fs.writeFile(`${process.argv[2]}/.gitignore`, body, { encoding: 'utf-8' }, (err) => {
-        if (err) throw err;
+  https.get(
+    'https://raw.githubusercontent.com/AlexSkir/alexskir-reactplate/master/.gitignore',
+    (res) => {
+      res.setEncoding('utf8');
+      let body = '';
+      res.on('data', (data) => {
+        body += data;
       });
-    });
-  });
+      res.on('end', () => {
+        fs.writeFile(`${process.argv[2]}/.gitignore`, body, { encoding: 'utf-8' }, (err) => {
+          if (err) throw err;
+        });
+      });
+    },
+  );
 
   console.log('npm init -- done\n');
 

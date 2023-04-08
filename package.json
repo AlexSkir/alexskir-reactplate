@@ -1,10 +1,10 @@
 {
-  "name": "reactset",
+  "name": "alexskir-reactplate",
   "version": "1.0.0",
-  "description": "template to set environment for react + webpack + babel",
+  "description": "template setting environment for react + webpack + babel",
   "main": "index.js",
   "bin": {
-    "reactset": "./bin/start.js"
+    "alexskir-reactplate": "./bin/start.js"
   },
   "scripts": {
     "start": "webpack-dev-server --port 8080 --open --mode=development",
