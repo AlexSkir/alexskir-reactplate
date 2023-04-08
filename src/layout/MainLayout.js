@@ -29,7 +29,7 @@ export default class MainLayout extends React.Component {
     return (
       <Layout>
         <Sider collapsible collapsed={collapsed} onCollapse={this.onCollapse}>
-          {collapsed ? <div className="logo">N</div> : <div className="logo">AlexSkir</div>}
+          {collapsed ? <div className="logo">AS</div> : <div className="logo">AlexSkir</div>}
           <Menu
             theme="dark"
             mode="inline"
