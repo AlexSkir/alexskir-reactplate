@@ -1,6 +1,6 @@
 {
   "name": "alexskir-reactplate",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "template setting environment for react + webpack + babel",
   "main": "index.js",
   "repository": {
