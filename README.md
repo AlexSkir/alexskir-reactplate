@@ -6,7 +6,7 @@ The template is similar to create react app but gives you more control over the 
 
 ## Prerequisites
 
-> **use node >= 10.16.0**
+> **use node >= 12.22.12**  **npm >= 9.6.4**
 
 ## Installation
 
