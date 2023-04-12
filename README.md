@@ -2,11 +2,18 @@
 
 *It is a modified and updated template based on [reactjs-boilerplate of Nikhil-Kumaran](https://github.com/Nikhil-Kumaran/reactjs-boilerplate).* 
 
-The template is similar to create react app but gives you more control over the build configurations. It sets up  react (@^17.0.2), babel, webpack (@^5.78.0) with basic loaders (CSS, LESS, SASS, babel), ant design and bootstrap, react-router. It is optomized for development and production using code splitting and lazy loading
+The template is similar to create react app but gives you more control over the build configurations. It sets up  react (@^17.0.2), react-router, babel, webpack (@^5.78.0) with basic loaders (CSS, LESS, SASS, babel), ant design and bootstrap. It is optomized for development and production using code splitting and lazy loading
 
 ## Prerequisites
 
-> **use node >= 12.22.12**  **npm >= 9.6.4**
+> **use node >= 15.14.0**  **npm >= 9.6.4**  
+
+*For Node@12.x use alexskir-reactplate@1.0.1 package*
+
+## Changelog
+
+* Node@15.x is required due to updated dependencies
+* Add basic SEO tags with react-helmet-async (*customize the SEO.js*)
 
 ## Installation
 
@@ -44,7 +51,7 @@ Builds the app for production and files are saved to the `build` folder.
 
 It bundles your files in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include hashes.
+The build is minified and the filenames include hashes. You can run your build locally with the command *npx serve build*
 
 Your app is ready to be deployed!
 
