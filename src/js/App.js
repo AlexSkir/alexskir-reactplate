@@ -1,7 +1,7 @@
 import { hot } from 'react-hot-loader';
 import React from 'react';
 import { HelmetProvider } from 'react-helmet-async';
-import SEO from './SEO';
+import SEO from './common/SEO';
 import AppRouter from './routes';
 
 const App = () => {

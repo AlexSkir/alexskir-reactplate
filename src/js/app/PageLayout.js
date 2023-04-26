@@ -1,7 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Layout, PageHeader } from 'antd';
-import './PageLayout.scss';
 
 const { Content } = Layout;
 

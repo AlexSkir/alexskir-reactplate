@@ -2,6 +2,7 @@ const HtmlWebPackPlugin = require('html-webpack-plugin');
 const { BundleAnalyzerPlugin } = require('webpack-bundle-analyzer');
 const path = require('path');
 const webpack = require('webpack');
+const Dotenv = require('dotenv-webpack');
 const CompressionPlugin = require('compression-webpack-plugin');
 const CopyPlugin = require('copy-webpack-plugin');
 const { jsonBeautify } = require('beautify-json');
@@ -102,13 +103,14 @@ const config = {
       devMode: 'light',
       prefix: 'assets/favicon/',
     }),
+    new Dotenv(),
   ],
 };
 
 module.exports = (env, argv) => {
   config.mode = argv.mode;
   if (argv.mode === 'development') {
-    config.entry = ['react-hot-loader/patch', './src'];
+    config.entry = ['react-hot-loader/patch', './src/js/index.js', './src/css/index.scss'];
     config.devtool = 'inline-source-map';
     config.resolve.alias['react-dom'] = '@hot-loader/react-dom';
     config.stats.errorDetails = true;
@@ -122,7 +124,9 @@ module.exports = (env, argv) => {
   }
 
   if (argv.mode === 'production') {
-    config.entry = ['./src'];
+    config.entry = {
+      index: ['./src/js/index.js', './src/css/index.scss'],
+    };
     config.devtool = 'source-map';
     config.output.filename = '[name].[chunkhash].bundle.js';
     config.output.chunkFilename = '[name].[chunkhash].bundle.js';

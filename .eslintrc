@@ -48,6 +48,20 @@
       "off"
     ],
     "no-console": "off",
-    "camelcase": "off"
+    "camelcase": "off",
+    "func-names": "off",
+    "no-shadow": "off",
+    "import/no-extraneous-dependencies": "off",
+    "no-unused-vars": "off",
+    "no-param-reassign": [
+      "error",
+      {
+        "props": true,
+        "ignorePropertyModificationsFor": [
+          "state",
+          "todo"
+        ]
+      }
+    ]
   }
 }

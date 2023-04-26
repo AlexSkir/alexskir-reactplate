@@ -1,8 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import PageLayout from '../../layout/PageLayout';
-import Card from '../../components/cards/cards';
-import SEO from '../../SEO';
+import PageLayout from '../PageLayout';
+import SEO from '../../common/SEO';
+import TodoList from '../../todos/TodoList';
+import TodoInput from '../../todos/TodoInput';
 
 const Home = ({ location: { pathname } }) => {
   if (pathname !== '/') {
@@ -18,7 +19,15 @@ const Home = ({ location: { pathname } }) => {
           type="article"
         />
         <h3 className="h3-demo">Home page</h3>
-        <Card />
+        <main>
+          <section className="medium-container">
+            <h2>Todos</h2>
+            <div className="todoapp">
+              <TodoInput />
+              <TodoList />
+            </div>
+          </section>
+        </main>
       </>
     </PageLayout>
   );

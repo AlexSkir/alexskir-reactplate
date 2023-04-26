@@ -2,7 +2,7 @@
 
 *It is a modified and updated template based on [reactjs-boilerplate of Nikhil-Kumaran](https://github.com/Nikhil-Kumaran/reactjs-boilerplate).* 
 
-The template is similar to create react app but gives you more control over the build configurations. It sets up  react (@^17.0.2), react-router, babel, webpack (@^5.78.0) with basic loaders (CSS, LESS, SASS, babel), ant design and bootstrap. It is optomized for development and production using code splitting and lazy loading
+The template is similar to create react app but gives you more control over the build configurations. It sets up  react (@^17.0.2), react-redux (@^8.0.5), @reduxjs/toolkit (@^1.9.3), react-router, babel, webpack (@^5.78.0) with basic loaders (CSS, LESS, SASS, babel), Ant design and Bootstrap. It is optomized for development and production using code splitting and lazy loading
 
 ## Prerequisites
 
@@ -12,8 +12,11 @@ The template is similar to create react app but gives you more control over the 
 
 ## Changelog
 
-* Node@15.x is required due to updated dependencies
-* Add basic SEO tags with react-helmet-async (*customize the SEO.js*)
+* Add react-redux and @reduxjs/toolkit
+* Add simplified TODO app as a template for react/redux application
+* Add basic reduxjs/toolkit methods - getState, dispatch, configureStore, reducer with actions and selectors, createAsyncThunk, middleware and devTools integration 
+
+*if you don't need either redux or its sample methods - use alexskir-reactplate@1.0.0 package*
 
 ## Installation
 
